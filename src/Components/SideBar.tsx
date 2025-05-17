@@ -39,6 +39,11 @@ const SideNav = styled.nav`
     padding: 1.2rem;
   }
 
+  .logo button {
+    margin-top: 0.2rem;
+    margin-left: 0.3rem;
+  }
+
   .minimize-icon {
     transition: all 0.2s ease-in-out;
     &:hover {
