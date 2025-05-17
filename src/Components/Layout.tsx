@@ -5,6 +5,10 @@ import TopBar from "./TopBar";
 
 const LayoutContainer = styled.div`
   display: flex;
+
+  .content {
+    background-color: #d9d9d9;
+  }
 `;
 
 function Layout({ children }: { children: React.ReactNode }) {

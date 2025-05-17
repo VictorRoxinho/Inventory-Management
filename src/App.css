@@ -9,3 +9,11 @@
 body {
   font-family: "Poppins", "Public Sans", Arial, sans-serif;
 }
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 0.7rem;
+}
