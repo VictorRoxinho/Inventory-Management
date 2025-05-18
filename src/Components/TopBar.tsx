@@ -3,12 +3,14 @@ import styled from "styled-components";
 const TopBarContainer = styled.div`
   width: 100vw;
   height: 100px;
+
   display: flex;
   flex-direction: column;
   padding-top: 1rem;
   padding-left: 1.5rem;
   border-bottom: 3px solid #e0e0e0;
   font-family: "Poppins", sans-serif;
+  background-color: #fff;
 
   h1 {
     font-weight: 500;
