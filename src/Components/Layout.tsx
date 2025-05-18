@@ -5,9 +5,18 @@ import TopBar from "./TopBar";
 
 const LayoutContainer = styled.div`
   display: flex;
+  background-color: #d9d9d9;
+  min-height: 100vh;
+  width: 100vw;
+
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
 
   .content {
-    background-color: #d9d9d9;
+    padding: 3rem;
   }
 `;
 
