@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import SummaryCards from "../../Components/SummaryCards";
 import Table from "../../Components/Table";
+import TaskButton from "../../Components/TaskButton";
 
 const SalesContainer = styled.div`
   width: 100%;
@@ -84,7 +85,7 @@ function Sales() {
     <SalesContainer>
       <div className="sales-summary">
         <h2>Sales Summary</h2>
-        <button>Criar novo PV</button>
+        <TaskButton variant="create">Criar novo Pedido de Venda</TaskButton>
       </div>
       <div className="cards-container">
         <SummaryCards

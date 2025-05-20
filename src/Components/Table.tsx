@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import TableButton from "./TableButton";
 
 const TableContainer = styled.div`
   display: flex;
@@ -18,6 +19,7 @@ const TableContainer = styled.div`
   .table-top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 3px solid #d9d9d9;
     padding: 1.5rem;
   }
@@ -59,6 +61,20 @@ const TableContainer = styled.div`
     gap: 1rem;
     align-items: center;
   }
+
+  .table-search {
+    border: 1px solid #53545c;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    transition: border-color 0.2s;
+  }
+
+  .table-search:focus-within {
+    border-color: #5570f1;
+    box-shadow: 0 0 0 2px #dbeafe;
+  }
 `;
 
 interface TableProps {
@@ -73,10 +89,17 @@ function Table({ title, headers, rows }: TableProps) {
       <div className="table-top">
         {title && <h2>{title}</h2>}
         <div className="table-top-actions">
-          <input type="text" placeholder="Pesquisar" />
-          <button>Filtro</button>
-          <button>Filtro</button>
-          <button>Exportar</button>
+          <div className="table-search">
+            <img src="/search-icon.svg" alt="Pesquisar" />
+            <input
+              type="text"
+              placeholder="Pesquisar"
+              style={{ border: "none", outline: "none", marginLeft: "0.5rem" }}
+            />
+          </div>
+          <TableButton variant="filter">Filtro</TableButton>
+          <TableButton variant="calendar">Filtro</TableButton>
+          <TableButton variant="export">Exportar</TableButton>
         </div>
       </div>
       <table>
@@ -114,7 +137,9 @@ function Table({ title, headers, rows }: TableProps) {
       </table>
       <div className="table-footer">
         <div className="footer-left">
-          <select>
+          <select
+            style={{ border: "none", outline: "none", padding: "0.5rem" }}
+          >
             <option value="">10</option>
             <option value="">15</option>
             <option value="">20</option>
@@ -122,7 +147,9 @@ function Table({ title, headers, rows }: TableProps) {
           <h4>Itens por página</h4>
         </div>
         <div className="footer-right">
-          <select>
+          <select
+            style={{ border: "none", outline: "none", padding: "0.5rem" }}
+          >
             <option value="">1</option>
             <option value="">2</option>
             <option value="">3</option>
