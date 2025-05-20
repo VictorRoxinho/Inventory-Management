@@ -23,13 +23,13 @@ function TableButton({ variant, onClick, children }: TableButtonProps) {
   let alt = "";
 
   if (variant === "filter") {
-    iconSrc = "/filter-icon.svg";
+    iconSrc = "/icons/filter-icon.svg";
     alt = "Filtro";
   } else if (variant === "calendar") {
-    iconSrc = "/filter-calendar.svg";
+    iconSrc = "/icons/filter-calendar.svg";
     alt = "Agenda";
   } else if (variant === "export") {
-    iconSrc = "/export-icon.svg";
+    iconSrc = "/icons/export-icon.svg";
     alt = "Exportar";
   }
 

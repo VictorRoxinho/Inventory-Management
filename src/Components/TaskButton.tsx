@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const Icons = {
-  create: "./plus-icon.svg",
-  edit: "./edit-icon.svg",
-  delete: "./delete-icon.svg",
+  create: "/icons/plus-icon.svg",
+  edit: "/icons/edit-icon.svg",
+  delete: "/icons/delete-icon.svg",
 };
 
 const variantColors = {
