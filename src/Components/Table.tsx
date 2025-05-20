@@ -90,7 +90,7 @@ function Table({ title, headers, rows }: TableProps) {
         {title && <h2>{title}</h2>}
         <div className="table-top-actions">
           <div className="table-search">
-            <img src="/search-icon.svg" alt="Pesquisar" />
+            <img src="/icons/search-icon.svg" alt="Pesquisar" />
             <input
               type="text"
               placeholder="Pesquisar"

@@ -89,7 +89,7 @@ function Sales() {
       </div>
       <div className="cards-container">
         <SummaryCards
-          icon="./sales-summary-icon.svg"
+          icon="./icons/sales-summary-icon.svg"
           title="Sales Summary"
           options={["Hoje", "Semana", "Mês", "Ano"]}
           info={[
@@ -99,7 +99,7 @@ function Sales() {
           ]}
         ></SummaryCards>
         <SummaryCards
-          icon="./sales-summary-icon.svg"
+          icon="./icons/sales-summary-icon.svg"
           title="Sales Summary"
           options={["Hoje", "Semana", "Mês", "Ano"]}
           info={[
